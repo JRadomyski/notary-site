@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="description" content="I-SYSTEM zajmuje się montażem sprzętu alarmowego i systemów 
+    telewizji przemysłowej. Współpracując z I-SYSTEM masz pewność, że otrzymujesz sprzęt 
+    najnowszej generacji od sprawdzonych, solidnych producentów i na atrakcyjnych warunkach.">
+    <link rel="icon" type="image/x-icon" href="img/icons/mainIcon.png">
+    <title>I-SYSTEM Siedlce</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="sideNav">
+        <nav>
+        <ul>
+            <li></li>
+            <li><a class = "nav__link" href="#header">Początek</a></li>
+            <li><a class = "nav__link" href="#about">O Nas</a></li>
+            <li><a class = "nav__link" href="#gallery">Galeria</a></li>
+            <li><a class = "nav__link" href="#contact">Kontakt</a></li>
+        </ul>
+        </nav>
+        <div id="menubtn">
+          <img src="img/icons/menu.svg" id="menu" alt="hamburger-menu">
+        </div>
+      </section>
+
+      <nav class="nav nav-desktop">
+        <a class = "nav__link" href="#about">O nas</a>
+        <a class = "nav__link" href="#gallery">Galeria</a>
+        <a class = "nav__link" href="#contact">Kontakt</a>
+      </nav>
+
+    <canvas id="canvas"></canvas>
+    <header id="header" class="heading">
+        <h1>I-SYSTEM</h1><p>Systemy Alarmowe</p>
+    </header>
+
+    <section id="about">
+        <div class="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-7"><img class="img-fluid rounded" src="img/securityLock.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 about">
+                        <div class="p-1">
+                            <h2>O Firmie</h2>
+                            <p>
+                                I-SYSTEM zajmuje się montażem sprzętu alarmowego i 
+                                systemów telewizji przemysłowej. Firma powstała w 
+                                2003 r. Moje doświadczenie jest o wiele większe, 
+                                bo już od 1995 roku zajmowałem się montażem i 
+                                serwisowaniem instalacji alarmowych, jako pracownik 
+                                innych firm. Współpracując z I-SYSTEM masz pewność, 
+                                że otrzymujesz sprzęt najnowszej generacji od sprawdzonych, 
+                                solidnych producentów i na atrakcyjnych warunkach.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-6"><img class="img-fluid rounded" src="img/cameraHikvision.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 about">
+                        <div class="p-1">
+                            <h2>Oferta</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error alias iure explicabo facilis voluptates rerum inventore dolores, dicta laudantium ab doloremque possimus dolorum, omnis consequatur placeat dolorem deserunt ratione.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+        <div class="container px-5" >
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-6"><img class="img-fluid rounded" src="img/cameraSecond.jpg" alt="..." /></div>
+                </div>
+                <div class="col-lg-6 about">
+                    <div class="p-1">
+                        <h2>Sprzedawane przez <br> I-SYSTEM</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Sequi at explicabo vero laboriosam aut cumque sapiente soluta 
+                            itaque, eveniet, animi est quis dolore architecto vel odio voluptatem, 
+                            quas consequatur quam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="section__header ">
+          <h1 class="display-3">GALERIA</h1>
+        </div>
+        <ul class="lightbox">
+          <li class="photo"><img src="img/cameraHikvision.jpg" alt="..."></li>
+          <li class="photo"><img src="img/camera.jpg" alt="..."></li>
+          <li class="photo"><img src="img/cameraSecond.jpg" alt="..."></li>
+          <li class="photo"><img src="img/homeSecurity.jpg" alt="..."></li>
+          <li class="photo"><img src="img/securityLock.jpg" alt="..."></li>
+          <li class="photo"><img src="img/camera.jpg" alt="..."></li>
+      </ul>
+  
+      <div class="popup hidden">
+          <img src="img/icons/x.svg" class="popup__close" alt="close"></img>
+          <img src="img/camera.jpg" alt="displayedImg" class="popup__img">
+          <img src="img/icons/chevron-left.svg" class="popup__arrow popup__arrow--left"></img>
+          <img src="img/icons/chevron-right.svg" class="popup__arrow popup__arrow--right"> </img>
+      </div>
+  
+      </section>
+
+      <section id="contact">
+        <div class="section__header">
+            <h1 class="display-3">KONTAKT</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="phone" class="col-12 col-lg-4">
+                    <img class="m-5" height = "50px" width="50px" src="img/icons/ikonka (1).png" alt="contact__icon">
+                    <h2>Numer Kontaktowy</h2>
+                    <a href="tel:256333630"><p>(25) 633 36 30</p></a>
+                    <a href="tel:602713660"><p>602 713 660</p>
+                </div>
+    
+                <div id="mail" class="col-12 col-lg-4">
+                    <img class="m-5" height = "50px" width="50px" src="img/icons/ikonka(3).png" alt="contact__icon">
+                    <h2>E - MAIL</h2>
+                    <p>tomaszkamont@i-system.info</p>
+                </div>
+    
+                <div id="address" class="col-12 col-lg-4">
+                    <img class="m-5" height = "50px" width="50px" src="img/icons/ikonka (2).png" alt="contact__icon">
+                    <h2>Adres</h2>
+                    <p>ul. Daszyńskiego 17/49 <br> 08-110 Siedlce</p>
+                </div>
+               
+            </div>
+        </div>
+        
+        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4893.960889077253!2d22.232158000000002!3d52.171049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471f5ae7ce53c139%3A0xc0482b79d52a76c6!2sIgnacego%20Daszy%C5%84skiego%2017%2C%2008-103%20Siedlce%2C%20Polska!5e0!3m2!1spl!2sus!4v1663945681832!5m2!1spl!2sus" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__bottom-text">&copy; <span class="footer__year"></span> I-SYSTEM TOMASZ KAMONT <a href="https://jakubradomyski.me/"> (JR) </a> </p>
+    </footer>
+
+    <script src="script/js.js"></script>
+</body>
+
+</html>
