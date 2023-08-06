@@ -114,7 +114,6 @@ a.nav__link:hover {
     opacity: 0.5;
 }
 
-
 #canvas {
     padding-top: 200px;
     opacity: 0.5;
@@ -425,7 +424,6 @@ footer.footer a:hover {
         transform: scaleX(0);
         transform-origin: left;
     }
-
     .nav__link:hover::after {
         transform: scaleX(1);
         transform-origin: right;
