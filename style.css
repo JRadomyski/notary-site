@@ -38,7 +38,7 @@ body {
     top: 0;
     z-index: 2;
     transition: 0.5s;
-    background-image: linear-gradient(to bottom, #c4c4c4, rgba(255, 255, 255, 0.098));
+    background-image: linear-gradient(to bottom, #81818189, rgba(255, 255, 255, 0.098));
 }
 
 #sideNav li:hover {
