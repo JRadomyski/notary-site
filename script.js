@@ -8,7 +8,7 @@ sideNav.style.right = "-250px";
 
 
 menuBtn.onclick = function () {
-    if (sideNav.style.right == "-250px") {
+    if (sideNav.style.right === "-250px") {
         sideNav.style.right = "0";
         menu.src = "img/icons/x.svg";
     } else {
@@ -18,8 +18,7 @@ menuBtn.onclick = function () {
 }
 
 const CurrentYear = () => {
-    const year = (new Date).getFullYear();
-    yearInFooter.innerText = year;
+    yearInFooter.innerText = (new Date).getFullYear();
 }
 
 CurrentYear();

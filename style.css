@@ -1,6 +1,5 @@
 :root {
-    --red: #da251c;
-    --burgundy: #800020;
+    --darkBlue: rgb(15, 15, 79);
     --white: #fff;
     --dark: #1b1b1b;
 }
@@ -14,7 +13,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 body {
     background-color: #ffffff;
     font-size: 30px;
@@ -24,13 +22,12 @@ body {
     margin: auto;
     text-align: center;
     letter-spacing: 3px;
-    color: var(--red);
+    color: var(--darkBlue);
 }
 
 .hamburger-desktop {
     display: none;
     position: fixed;
-    display: none;
 }
 
 #sideNav {
@@ -52,11 +49,9 @@ body {
 nav ul li, nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px;
     text-transform: uppercase;
     position: relative;
-    padding: 10px 20px;
-    text-decoration: none;
     list-style: none;
 }
 
@@ -88,7 +83,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
 }
 
 a.nav__link:hover {
-    color: var(--red);
+    color: var(--darkBlue);
 }
 
 #menubtn {
@@ -114,32 +109,76 @@ a.nav__link:hover {
     opacity: 0.5;
 }
 
-#canvas {
-    padding-top: 200px;
-    opacity: 0.5;
-    position: fixed;
-    z-index: -1;
-}
-
 header {
     height: 100vh;
-    padding: 0px 20px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 999;
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px #ffffff;
-
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/notary.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header h1 {
-    font-size: 5em;
+    font-size: 4em;
+    margin-bottom: 10px;
 }
 
-header p {
-    font-size: 3em;
+header h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+header #contactBtn {
+    padding: 10px 20px;
+    background-color: var(--darkBlue);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header #contactBtn:hover {
+    background-color: #555;
+}
+
+.section__header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section__header .display-3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section__header p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#hours {
+    background-color: #f9f9f9; /* subtelne tło dla kontrastu */
+    padding: 40px 20px;
+    border-top: 3px solid #e1e1e1; /* subtelna linia oddzielająca */
+    border-bottom: 3px solid #e1e1e1;
 }
 
 #contact {
@@ -169,7 +208,9 @@ header p {
 #contact #address {
     color: #1b1b1b;
 }
-
+#contact iframe {
+    width: 100%;
+}
 
 footer {
     padding: 110px;
@@ -178,7 +219,7 @@ footer {
 }
 
 footer.footer a {
-    color: var(--red);
+    color: var(--darkBlue);
     text-decoration: NONE;
     transition: opacity 0.3s ease;
 }
@@ -186,46 +227,22 @@ footer.footer a {
 footer.footer a:hover {
     opacity: 50%;
 }
-
-
 @media (max-width: 997px) {
     nav.nav.nav-desktop {
         display: none;
     }
 
-    canvas {
-        width: 100vh;
-    }
-
-    .lightbox {
-        margin: 30px;
-        padding: 30px;
-    }
-
-
 }
-
 @media (min-width: 997px) {
-    .nav {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        padding: 1em;
-    }
-
-    .nav-desktop {
-        display: block;
-        color: var(--red);
-    }
 
     .nav__link {
         color: var(--dark);
         text-decoration: none;
         font-size: 20px;
-        padding: 10px;
+        padding: 10px 20px;
         text-transform: uppercase;
         position: relative;
-        padding: 10px 20px;
-        text-decoration: none;
+
     }
 
     .nav__link:hover {
@@ -245,7 +262,7 @@ footer.footer a:hover {
         left: 0;
         height: 3px;
         width: 100%;
-        background-color: var(--red);
+        background-color: var(--darkBlue);
         transition: transform 0.3s;
         transform: scaleX(0);
         transform-origin: left;
