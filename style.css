@@ -146,6 +146,11 @@ header h4 {
 }
 
 header .contactBtn {
+    width: 150px; /* Dodane */
+    height: 80px; /* Dodane */
+    display: inline-flex; /* Dodane, aby środkować tekst wewnątrz */
+    align-items: center; /* Dodane, aby środkować tekst wewnątrz */
+    justify-content: center; /* Dodane, aby środkować tekst wewnątrz */
     padding: 10px 20px;
     background-color: var(--darkBlue);
     color: #fff;
@@ -255,7 +260,7 @@ footer.footer a:hover {
 @media (min-width: 997px) {
 
     .nav__link {
-        color: var(--white);
+        color: var(--dark);
         text-decoration: none;
         font-size: 20px;
         padding: 10px 20px;
