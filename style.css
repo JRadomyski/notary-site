@@ -1,5 +1,5 @@
 :root {
-    --darkBlue: rgb(15, 15, 79);
+    --darkBlue: #0f0f4f;
     --white: #fff;
     --dark: #1b1b1b;
 }
@@ -38,12 +38,11 @@ body {
     top: 0;
     z-index: 2;
     transition: 0.5s;
-    background-image: linear-gradient(to bottom, #ffffff24, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom, #0f0f4f6d, #0f0f4f47);
 }
 
 #sideNav li:hover {
     transition: all 0.5s ease;
-    color: #e1e1e1;
 }
 
 nav ul li, nav ul li a {
@@ -83,7 +82,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
 }
 
 a.nav__link:hover {
-    color: var(--darkBlue);
+    color: var(--white);
 }
 
 #menubtn {
@@ -117,12 +116,17 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color:aliceblue;
     text-shadow: 1px 1px 2px #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("img/notary.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.309)), url("img/notary3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+header img {
+    width: 10rem;
+    height: 10rem;
 }
 
 header h1 {
@@ -146,11 +150,11 @@ header h4 {
 }
 
 header .contactBtn {
-    width: 150px; /* Dodane */
-    height: 80px; /* Dodane */
-    display: inline-flex; /* Dodane, aby środkować tekst wewnątrz */
-    align-items: center; /* Dodane, aby środkować tekst wewnątrz */
-    justify-content: center; /* Dodane, aby środkować tekst wewnątrz */
+    width: 150px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     background-color: var(--darkBlue);
     color: #fff;
@@ -260,7 +264,7 @@ footer.footer a:hover {
 @media (min-width: 997px) {
 
     .nav__link {
-        color: var(--dark);
+        color: var(--white);
         text-decoration: none;
         font-size: 20px;
         padding: 10px 20px;
