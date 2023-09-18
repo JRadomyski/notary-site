@@ -2,6 +2,7 @@
     --darkBlue: #0f0f4f;
     --white: #fff;
     --dark: #1b1b1b;
+    --lightBlue: #6b6bff;
 }
 
 * {
@@ -46,7 +47,7 @@ body {
 }
 
 nav ul li, nav ul li a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -82,6 +83,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
 }
 
 a.nav__link:hover {
+    opacity: 50%;
     color: var(--white);
 }
 
@@ -109,7 +111,7 @@ a.nav__link:hover {
 }
 
 header {
-    height: 100vh;
+    height: 105vh;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
