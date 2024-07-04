@@ -1,6 +1,6 @@
 ## Overview
 
-This is a simple notary website that provides necessary information about the notary's office, including office hours, contact details, and a map showing the location.
+This is a simple notary website that provides necessary information about the notary's office.
 
 ## Assets
 
